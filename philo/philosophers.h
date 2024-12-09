@@ -6,7 +6,7 @@
 /*   By: djelacik <djelacik@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 10:30:28 by djelacik          #+#    #+#             */
-/*   Updated: 2024/12/07 13:19:31 by djelacik         ###   ########.fr       */
+/*   Updated: 2024/12/09 11:55:55 by djelacik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ typedef struct s_data
 	int				time_to_eat;
 	int				time_to_sleep;
 	int				must_eat_count;
+	int				must_eat_flag;
 	long			start_time;
 	pthread_mutex_t	print_lock;
 	pthread_mutex_t	simulation_lock;

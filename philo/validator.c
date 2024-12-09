@@ -6,7 +6,7 @@
 /*   By: djelacik <djelacik@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 10:37:55 by djelacik          #+#    #+#             */
-/*   Updated: 2024/12/07 13:18:29 by djelacik         ###   ########.fr       */
+/*   Updated: 2024/12/09 11:56:50 by djelacik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,12 +56,15 @@ int	validate_args(int argc, char **argv, t_data *data)
 	data->time_to_eat = ft_atoi(argv[3]);
 	data->time_to_sleep = ft_atoi(argv[4]);
 	if (argc == 6)
+	{
 		data->must_eat_count = ft_atoi(argv[5]);
+		data->must_eat_flag = 1;
+	}
 	else
 		data->must_eat_count = 0;
 	if (data->num_philos <= 0 || data->time_to_die <= 0
 		|| data->time_to_eat <= 0 || data->time_to_sleep <= 0
-		|| data->must_eat_count <= 0)
+		|| (data->must_eat_count <= 0 && data->must_eat_flag))
 	{
 		printf("Error: Invalid argument values.\n");
 		return (1);
