@@ -2,7 +2,7 @@
 
 This README provides an overview of the **Philo** project, detailing its objectives and offering guidance. The goal of the project is to implement a simulation of the classic Dining Philosophers problem in C, adhering to POSIX standards and best practices in multithreaded programming. It demonstrates synchronization techniques using POSIX threads (pthreads) and mutex locks to manage resource sharing among concurrent threads.
 
-![Philo](imgs/philo.gif)
+![Philo](imgs/philos_dining.png)
 
 ---
 ## **Table of Contents**
